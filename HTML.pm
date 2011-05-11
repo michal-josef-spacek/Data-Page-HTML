@@ -28,16 +28,15 @@ Generate page list HTML.
 
 =over 8
 
-=item C<default_rs_uri_for_page($page_uri_prefix, $page_uri_suffix)>
+=item C<default_rs_uri_for_page($page_uri_prefix)>
 
 TODO
 
 =cut
 
 sub default_rs_uri_for_page {
-    my ( $page_uri_prefix, $page_uri_suffix ) = @_;
+    my $page_uri_prefix = shift;
     $page_uri_prefix = '' unless defined $page_uri_prefix;
-    $page_uri_suffix = '' unless defined $page_uri_suffix;
 
     return sub {
         my ( $page_num, $text, $class_name ) = @_;

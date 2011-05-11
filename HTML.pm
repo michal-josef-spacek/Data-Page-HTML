@@ -1,5 +1,6 @@
 package Data::Page::HTML;
 
+use base qw(Exporter);
 use strict;
 use warnings;
 our $VERSION = '0.11';

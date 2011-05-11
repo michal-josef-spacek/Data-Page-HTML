@@ -23,8 +23,15 @@ Data::Page::HTML
 
 Generate page list HTML.
 
-=cut
+=head1 SUBROUTINES
 
+=over 8
+
+=item C<default_rs_uri_for_page($page_uri_prefix, $page_uri_suffix)>
+
+TODO
+
+=cut
 
 sub default_rs_uri_for_page {
     my ( $page_uri_prefix, $page_uri_suffix ) = @_;
@@ -41,6 +48,11 @@ sub default_rs_uri_for_page {
     };
 }
 
+=item C<get_pager_html($pager, $uri_param, $near_links_num)>
+
+TODO
+
+=cut
 
 sub get_pager_html {
     my ( $pager, $uri_param, $near_links_num ) = @_;
@@ -107,6 +119,7 @@ sub get_pager_html {
     return $ot;
 }
 
+=back
 
 =head1 SEE ALSO
 

@@ -58,7 +58,7 @@ sub get_pager_html {
     my ( $pager, $uri_param, $near_links_num ) = @_;
 
     my $rs_uri_for_page;
-    if ( ref $uri_param eq 'SUB' ) {
+    if ( ref $uri_param eq 'CODE' ) {
         $rs_uri_for_page = $uri_param;
     } elsif ( ref $uri_param eq 'HASH' ) {
         $rs_uri_for_page = default_rs_uri_for_page( $uri_param->{prefix});

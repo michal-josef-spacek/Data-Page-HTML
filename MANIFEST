@@ -6,3 +6,4 @@ t/Data::Page::HTML/01-version.t
 t/Data::Page::HTML/02-pod_coverage.t
 t/Data::Page::HTML/03-pod.t
 t/Data::Page::HTML/04-default_rs_uri_for_page.t
+t/Data::Page::HTML/05-get_pager_html.t

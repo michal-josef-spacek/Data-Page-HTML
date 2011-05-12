@@ -15,8 +15,8 @@ $data_page->current_page(1);
 my $ret = get_pager_html($data_page);
 is(
 	$ret,
-	'<div class=pages>'.
-		'<span class=text>Page 1/3</span>'.
+	'<div class="pages">'.
+		'<span class="text">Page 1/3</span>'.
 		'<span class="a-arrow disabled">&laquo;</span>'.
 		'<span class="a selected">1</span>'.
 		'<a href="page-2">2</a>'.
@@ -31,8 +31,8 @@ $data_page->current_page(2);
 $ret = get_pager_html($data_page);
 is(
 	$ret,
-	'<div class=pages>'.
-		'<span class=text>Page 2/3</span>'.
+	'<div class="pages">'.
+		'<span class="text">Page 2/3</span>'.
 		'<a href="page-1" class="arrow">&laquo;</a>'.
 		'<a href="page-1">1</a>'.
 		'<span class="a selected">2</span>'.
@@ -47,8 +47,8 @@ $data_page->current_page(3);
 $ret = get_pager_html($data_page);
 is(
 	$ret,
-	'<div class=pages>'.
-		'<span class=text>Page 3/3</span>'.
+	'<div class="pages">'.
+		'<span class="text">Page 3/3</span>'.
 		'<a href="page-2" class="arrow">&laquo;</a>'.
 		'<a href="page-1">1</a>'.
 		'<a href="page-2">2</a>'.
@@ -63,8 +63,8 @@ $data_page->current_page(1);
 $ret = get_pager_html($data_page, 'xxx-');
 is(
 	$ret,
-	'<div class=pages>'.
-		'<span class=text>Page 1/3</span>'.
+	'<div class="pages">'.
+		'<span class="text">Page 1/3</span>'.
 		'<span class="a-arrow disabled">&laquo;</span>'.
 		'<span class="a selected">1</span>'.
 		'<a href="xxx-2">2</a>'.
@@ -78,8 +78,8 @@ is(
 $ret = get_pager_html($data_page, { 'prefix' => 'xxx-' });
 is(
 	$ret,
-	'<div class=pages>'.
-		'<span class=text>Page 1/3</span>'.
+	'<div class="pages">'.
+		'<span class="text">Page 1/3</span>'.
 		'<span class="a-arrow disabled">&laquo;</span>'.
 		'<span class="a selected">1</span>'.
 		'<a href="xxx-2">2</a>'.
@@ -100,8 +100,8 @@ $ret = get_pager_html($data_page, sub {
 });
 is(
 	$ret,
-	'<div class=pages>'.
-		'<span class=text>Page 1/3</span>'.
+	'<div class="pages">'.
+		'<span class="text">Page 1/3</span>'.
 		'<span class="a-arrow disabled">&laquo;</span>'.
 		'<span class="a selected">1</span>'.
 		'<a href="xxx-2">2</a>'.
@@ -119,8 +119,8 @@ $data_page->current_page(3);
 $ret = get_pager_html($data_page, undef, 1);
 is(
 	$ret,
-	'<div class=pages>'.
-		'<span class=text>Page 3/10</span>'.
+	'<div class="pages">'.
+		'<span class="text">Page 3/10</span>'.
 		'<a href="page-2" class="arrow">&laquo;</a>'.
 		'<a href="page-1">1</a>'.
 		'<a href="page-2">2</a>'.
@@ -138,8 +138,8 @@ $data_page->current_page(5);
 $ret = get_pager_html($data_page, undef, 1);
 is(
 	$ret,
-	'<div class=pages>'.
-		'<span class=text>Page 5/10</span>'.
+	'<div class="pages">'.
+		'<span class="text">Page 5/10</span>'.
 		'<a href="page-4" class="arrow">&laquo;</a>'.
 		'<a href="page-1">1</a>'.
 		'...'.
@@ -157,8 +157,8 @@ $data_page->current_page(5);
 $ret = get_pager_html($data_page, undef, 1);
 is(
 	$ret,
-	'<div class=pages>'.
-		'<span class=text>Page 5/10</span>'.
+	'<div class="pages">'.
+		'<span class="text">Page 5/10</span>'.
 		'<a href="page-4" class="arrow">&laquo;</a>'.
 		'<a href="page-1">1</a>'.
 		'...'.
@@ -180,8 +180,8 @@ $data_page->current_page(8);
 $ret = get_pager_html($data_page, undef, 1);
 is(
 	$ret,
-	'<div class=pages>'.
-		'<span class=text>Page 8/10</span>'.
+	'<div class="pages">'.
+		'<span class="text">Page 8/10</span>'.
 		'<a href="page-7" class="arrow">&laquo;</a>'.
 		'<a href="page-1">1</a>'.
 		'...'.

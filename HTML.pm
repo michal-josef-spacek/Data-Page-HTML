@@ -74,8 +74,8 @@ sub get_pager_html {
     return '' if $last <= 1;
 
     my $ot = '';
-    $ot .= '<div class=pages>';
-    $ot .= '<span class=text>' . 'Page' . ' ' . $current . '/' . $last . '</span>';
+    $ot .= '<div class="pages">';
+    $ot .= '<span class="text">' . 'Page' . ' ' . $current . '/' . $last . '</span>';
 
     if ( $current > 1 ) {
         $ot .= $rs_uri_for_page->( $current-1, '&laquo;', 'arrow' );

@@ -61,7 +61,7 @@ sub get_pager_html {
     if ( ref $uri_param eq 'SUB' ) {
         $rs_uri_for_page = $uri_param;
     } elsif ( ref $uri_param eq 'HASH' ) {
-        $rs_uri_for_page = default_rs_uri_for_page( $uri_param->{prefix}, $uri_param->{suffix} );
+        $rs_uri_for_page = default_rs_uri_for_page( $uri_param->{prefix});
     } else {
         $uri_param = 'page-' unless $uri_param;
         $rs_uri_for_page = default_rs_uri_for_page( $uri_param, '' );

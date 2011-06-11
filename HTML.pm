@@ -206,6 +206,11 @@ sub get_pager_html {
  #   <a href="show-page-4" class="arrow">&raquo;</a>
  # </div>
 
+=head1 DEPENDENCIES
+
+L<Exporter(3pm)>,
+L<Readonly(3pm)>.
+
 =head1 SEE ALSO
 
 L<Data::Page(3pm)>,

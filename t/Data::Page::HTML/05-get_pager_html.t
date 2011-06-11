@@ -126,7 +126,7 @@ is(
 		'<a href="page-2">2</a>'.
 		'<span class="a selected">3</span>'.
 		'<a href="page-4">4</a>'.
-		'...'.
+		'…'.
 		'<a href="page-10">10</a>'.
 		'<a href="page-4" class="arrow">&raquo;</a>'.
 		' </div>',
@@ -142,11 +142,11 @@ is(
 		'<span class="text">Page 5/10</span>'.
 		'<a href="page-4" class="arrow">&laquo;</a>'.
 		'<a href="page-1">1</a>'.
-		'...'.
+		'…'.
 		'<a href="page-4">4</a>'.
 		'<span class="a selected">5</span>'.
 		'<a href="page-6">6</a>'.
-		'...'.
+		'…'.
 		'<a href="page-10">10</a>'.
 		'<a href="page-6" class="arrow">&raquo;</a>'.
 		' </div>',
@@ -161,11 +161,11 @@ is(
 		'<span class="text">Page 5/10</span>'.
 		'<a href="page-4" class="arrow">&laquo;</a>'.
 		'<a href="page-1">1</a>'.
-		'...'.
+		'…'.
 		'<a href="page-4">4</a>'.
 		'<span class="a selected">5</span>'.
 		'<a href="page-6">6</a>'.
-		'...'.
+		'…'.
 		'<a href="page-10">10</a>'.
 		'<a href="page-6" class="arrow">&raquo;</a>'.
 		' </div>',
@@ -184,7 +184,7 @@ is(
 		'<span class="text">Page 8/10</span>'.
 		'<a href="page-7" class="arrow">&laquo;</a>'.
 		'<a href="page-1">1</a>'.
-		'...'.
+		'…'.
 		'<a href="page-7">7</a>'.
 		'<span class="a selected">8</span>'.
 		'<a href="page-9">9</a>'.

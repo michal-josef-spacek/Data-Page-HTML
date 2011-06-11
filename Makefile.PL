@@ -25,6 +25,7 @@ WriteMakefile(
 	'VERSION' => 0.11,
 	'PREREQ_PM' => {
 		'Exporter' => 0,
+		'Readonly' => 0,
 	},
 	'test' => {
 		'TESTS' => 't/Data::Page::HTML/*.t',

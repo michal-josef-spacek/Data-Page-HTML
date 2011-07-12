@@ -3,31 +3,31 @@ use strict;
 use warnings;
 
 # Modules.
-use ExtUtils::MakeMaker;
+use inc::Module::Install;
 
 # Definition.
-WriteMakefile(
-	'AUTHOR' => 'Michal Jurosz <mj@mj41.cz>',
-	'BUILD_REQUIRES' => {
-		'Cwd' => 0,
-		'Data::Page' => 0,
-		'English' => 0,
-		'File::Spec' => 0,
-		'FindBin' => 0,
-		'Test::More' => 0,
-		'Test::Pod' => 0,
-		'Test::Pod::Coverage' => 0,
-	},
-	'CONFIGURE_REQUIRES' => {
-		'ExtUtils::MakeMaker' => 0,
-	},
-	'NAME' => 'Data::Page::HTML',
-	'VERSION' => 0.11,
-	'PREREQ_PM' => {
-		'Exporter' => 0,
-		'Readonly' => 0,
-	},
-	'test' => {
-		'TESTS' => 't/Data::Page::HTML/*.t',
-	},
-);
+abstract 'Generate page list HTML.';
+author 'Michal Jurosz <mj@mj41.cz>';
+author 'Michal Špaček <skim@cpan.org>';
+license 'perl';
+name 'Data-Page-HTML';
+requires 'Exporter' => 0;
+requires 'Readonly' => 0;
+resources 'repository' => {
+	'url' => 'git://github.com/tupinek/Data-Page-HTML',
+	'web' => 'https://github.com/tupinek/Data-Page-HTML',
+	'type' => 'git',
+};
+test_requires 'Cwd' => 0;
+test_requires 'Data::Page' => 0;
+test_requires 'English' => 0;
+test_requires 'File::Spec' => 0;
+test_requires 'FindBin' => 0;
+test_requires 'Test::More' => 0;
+test_requires 'Test::Pod' => 0;
+test_requires 'Test::Pod::Coverage' => 0;
+tests_recursive;
+version '0.11';
+
+# Run.
+WriteAll();

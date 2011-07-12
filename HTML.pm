@@ -19,17 +19,13 @@ our $VERSION = '0.11';
 
 =head1 NAME
 
-Data::Page::HTML
+Data::Page::HTML - Generate page list HTML.
 
 =head1 SYNOPSIS
 
   use Data::Page::HTML qw(get_pager_html);
   my $sub_uri = default_rs_uri_for_page('http://www.example.com/list.pl?number=');
   my $pager_html = get_pager_html($data_page, 'show-page-', 3);
-
-=head1 DESCRIPTION
-
-Generate page list HTML.
 
 =head1 SUBROUTINES
 

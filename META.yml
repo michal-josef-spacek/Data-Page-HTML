@@ -7,16 +7,17 @@ build_requires:
   Cwd: 0
   Data::Page: 0
   English: 0
-  ExtUtils::MakeMaker: 6.42
+  ExtUtils::MakeMaker: 6.36
   File::Spec: 0
   FindBin: 0
   Test::More: 0
   Test::Pod: 0
   Test::Pod::Coverage: 0
 configure_requires:
-  ExtUtils::MakeMaker: 6.42
+  ExtUtils::MakeMaker: 6.36
 distribution_type: module
-generated_by: 'Module::Install version 1.01'
+dynamic_config: 1
+generated_by: 'Module::Install version 1.06'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -30,9 +31,8 @@ requires:
   Exporter: 0
   Readonly: 0
 resources:
+  bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Data-Page-HTML
+  homepage: https://github.com/tupinek/Data-Page-HTML
   license: http://dev.perl.org/licenses/
-  repository:
-    type: git
-    url: git://github.com/tupinek/Data-Page-HTML
-    web: https://github.com/tupinek/Data-Page-HTML
+  repository: git://github.com/tupinek/Data-Page-HTML
 version: 0.11

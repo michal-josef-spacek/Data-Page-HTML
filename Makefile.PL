@@ -13,11 +13,10 @@ license 'perl';
 name 'Data-Page-HTML';
 requires 'Exporter' => 0;
 requires 'Readonly' => 0;
-resources 'repository' => {
-	'url' => 'git://github.com/tupinek/Data-Page-HTML',
-	'web' => 'https://github.com/tupinek/Data-Page-HTML',
-	'type' => 'git',
-};
+resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
+	'?Name=Data-Page-HTML';
+resources 'homepage' => 'https://github.com/tupinek/Data-Page-HTML';
+resources 'repository' => 'git://github.com/tupinek/Data-Page-HTML';
 test_requires 'Cwd' => 0;
 test_requires 'Data::Page' => 0;
 test_requires 'English' => 0;
